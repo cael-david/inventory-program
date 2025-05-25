@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List Page</title>
+</head>
+<body>
+    <h1>Build a List</h1>
+    <input type="text" placeholder="Search item...">
+    <button>Add</button>
+
+    <ul id="list">
+        <li>Item 01</li>
+        <li>Item 0A</li>
+    </ul>
+
+    <button onclick="clearList()">Clear List</button>
+    <button>Excel</button>
+    <button onclick="location.href='index.html'">Back</button>
+
+    <script>
+        function clearList() {
+            if (confirm("Do you really want to clear the list?")) {
+                document.getElementById("list").innerHTML = '';
+            }
+        }
+    </script>
+</body>
+</html>
